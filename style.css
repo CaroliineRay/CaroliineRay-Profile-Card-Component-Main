@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url(bg-pattern-top.svg) -310px -270px no-repeat, url(bg-pattern-bottom.svg) 190px 380px no-repeat;
+    background-color: hsl(185, 75%, 39%); 
+    background-size: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container {
+    width: 85vw; 
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 90px hsl(195, 31%, 46%);
+}
+
+.div_pattern {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar {
+    border-radius: 50%;
+    position: relative;
+    bottom: 50px;
+    left: 50%; 
+    transform: translateX(-50%);
+    border: 6px solid white;
+}
+
+.text {
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: -50px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {font-size: 22px; line-height: 95%;}
+
+p {
+    font-size: 15px;
+    padding: 0 0 15px;
+}
+
+p, span {
+    color:  hsl(0, 0%, 59%);
+}
+
+span {
+    font-weight: 400;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 7px;
+}
+
+br {
+
+}
+
+.stats {
+    font-size: 12px;
+    letter-spacing: 1.7px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 739px) {
+
+    .main_container {
+        width: 75vw;
+    }
+
+    body {
+    background: url(bg-pattern-top.svg) -300px -250px no-repeat, url(bg-pattern-bottom.svg) 200px 350px no-repeat;
+    background-color:hsl(185, 75%, 39%); 
+    background-size: 550px;
+    }
+}
+
+@media screen and (min-width: 740px) {
+
+    .main_container {
+        width: 400px;
+    }
+
+    body {
+        background: url(bg-pattern-top.svg) -350px -570px no-repeat, url(bg-pattern-bottom.svg) 750px 370px no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    background-size: 1050px;
+    }
+}
